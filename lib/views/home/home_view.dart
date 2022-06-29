@@ -5,8 +5,11 @@ import 'package:fbclone/views/friends/friendsview.dart';
 import 'package:fbclone/views/notifications/notiview.dart';
 import 'package:fbclone/views/pages/component/pages.dart';
 import 'package:fbclone/views/pages/pageview.dart';
+import 'package:fbclone/views/profile/profileview.dart';
 import 'package:fbclone/views/video/videoview.dart';
 import 'package:flutter/material.dart';
+
+import '../../constants/imagelist.dart';
 
 class Home extends StatefulWidget {
   const Home({ Key? key }) : super(key: key);
@@ -69,7 +72,6 @@ class _HomeState extends State<Home> {
           ),
           ],
           bottom: TabBar(
-            padding: EdgeInsets.all(0),
             tabs: _kTabs,
           )
         ),
@@ -81,7 +83,7 @@ class _HomeState extends State<Home> {
             Videoview(),
             Pageview(),
             Notiview(),
-            Scaffold(),
+            Profileview(),
             ]
        )));
   }
